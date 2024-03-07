@@ -1,15 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
+import React from 'react'
+import { NavigationContainer } from '@react-navigation/native'
+import AppNavigation from './src/navigation/AppNavigation'
 import { StyleSheet } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import AppNavigator from './src/navigation/AppNavigator';
 
-
-export default function App() {
+const App = () => {
   return (
     <NavigationContainer>
-      <AppNavigator />
+      <AppNavigation />
     </NavigationContainer>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -20,3 +19,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default App

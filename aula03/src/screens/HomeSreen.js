@@ -1,19 +1,17 @@
-import { View, Button } from 'react-native'
+import { View, Text, Button } from 'react-native'
 import React from 'react'
 
-const HomeSreen = ({ navigation }) => {
+const HomeScreen = ({ navigation }) => {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Button
-        title="Go to Details"
-        onPress={() => navigation.navigate('Details', {
-          itemId: 86,
-          otherParam: 'anything you want here',
-        }
-        )}
+      <Button title="Ir para os Detalhes" onPress={() => navigation.navigate('Details', {
+        itemId: 86,
+        otherParam: 'Qualquer coisa...'
+      }
+      )}
       />
     </View>
   )
 }
 
-export default HomeSreen
+export default HomeScreen
